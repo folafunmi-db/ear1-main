@@ -35,7 +35,7 @@ export const HeroContainer = styled.header`
 	position: relative;
 
 	&::before {
-		background-image: url(http://api.thumbr.it/whitenoise-144x140.png?background=#029F58ff&noise=626262&density=47&opacity=15);
+		/* background-image: url(http://api.thumbr.it/whitenoise-144x140.png?background=#029F58ff&noise=626262&density=47&opacity=15); */
 		content: "";
 		position: absolute;
 		width: 100%;
@@ -138,4 +138,25 @@ export const Hamburger = styled.div`
 			transform: translateY(-10px) rotate(-135deg);
 		}
 	} */
+`;
+
+export const Heading = styled.h1`
+	width: 90%;
+	max-width: 50rem;
+	color: #fff;
+	font-weight: 700;
+	font-size: clamp(37px, 15vw, 120px);
+	text-align: center;
+	line-height: clamp(40px, 15vw, 118px);
+	margin-bottom: 0.5rem;
+`;
+
+export const Sub = styled.p`
+	width: 90%;
+	max-width: 40rem;
+	font-weight: 400;
+	color: #fff;
+	font-size:  clamp(7px,4vw,20px);
+	text-align: center;
+	line-height: clamp(7px,7vw,35px);
 `;
