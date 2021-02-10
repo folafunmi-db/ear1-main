@@ -1,9 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Hero from "../src/components/Hero";
+import { App, Main, Footer } from "../styles/";
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<App>
 			<Head>
 				<meta charSet="utf-8" />
 				<meta
@@ -20,9 +21,11 @@ export default function Home() {
 				/>
 			</Head>
 
-			<main className={styles.main}>Ear1 main</main>
-
-			<footer className={styles.footer}>Ear1 footer</footer>
-		</div>
+			<Main>
+				<Hero />
+      </Main>
+      
+			<Footer>Ear1 footer</Footer>
+		</App>
 	);
 }
