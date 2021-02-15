@@ -285,11 +285,11 @@ export const Fans1Container = styled.div`
 `;
 
 export const Fans1Left = styled(AboutContainer)`
-	min-width: 500px;
+	min-width: 280px;
 	background-color: #fff;
 	justify-content: center;
 	align-items: flex-start;
-
+	width: 100%;
 	max-width: 700px;
 `;
 
@@ -334,6 +334,4 @@ export const Fans1Right = styled.div`
 export const Fans1Image = styled.div`
 	z-index: 3;
 	position: relative;
-
-
 `;
