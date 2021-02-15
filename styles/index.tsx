@@ -285,7 +285,7 @@ export const Fans1Container = styled.div`
 `;
 
 export const Fans1Left = styled(AboutContainer)`
-	min-width: 280px;
+	min-width: 330px;
 	background-color: #fff;
 	justify-content: center;
 	align-items: flex-start;
