@@ -1,6 +1,7 @@
 import styled from "styled-components/";
 
 const ear1Green = "#029F58";
+const ear1Green2 = "#007640";
 
 export const App = styled.div`
 	min-height: 100vh;
@@ -181,7 +182,7 @@ export const Phone1 = styled.div`
 		margin-top: 15rem;
 	}
 
-	@media (max-width:580px) {
+	@media (max-width: 580px) {
 		/* transform: scale(0.7) translate(-87%, -40%); */
 		margin-top: 50vw;
 	}
@@ -218,11 +219,56 @@ export const Phone3 = styled.div`
 	}
 `;
 
-export const AboutHeader = styled.h1`
+export const AboutContainer = styled.div`
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100vw;
+	overflow: hidden;
+	background-color: #f7f7f7;
+	padding: 2rem;
+`;
 
-`
+export const AboutHeader = styled.h1`
+	width: 90%;
+	max-width: 30rem;
+	font-weight: 500;
+	color: ${ear1Green2};
+	font-size: clamp(15px, 8vw, 60px);
+	text-align: left;
+	line-height: clamp(15px, 10vw, 70px);
+	z-index: 2;
+	margin-top: 3rem;
+	margin-bottom: 0rem;
+`;
 
 export const AboutParagraph = styled(Sub)`
 	color: #000;
-text-align: left;
-`
+	text-align: left;
+	z-index: 2;
+`;
+
+export const AboutIcon = styled.div`
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 10%;
+	transform: scale(2.1);
+	filter: grayscale(1) opacity(0.2);
+
+	@media (max-width: 801px) {
+		transform: scale(0.7);
+		right: 0%;
+	}
+`;
+
+export const AboutIcon2 = styled(AboutIcon)`
+	left: -20%;
+	transform: scale(0.6);
+
+	@media (max-width: 801px) {
+		display: none;
+	}
+`;
