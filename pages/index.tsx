@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "../src/components/Hero";
 import About from "../src/components/About";
+import Fans1 from "../src/components/Fans1";
 import { App, Main, Footer } from "../styles/";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
 			<Main>
 				<Hero />
 				<About />
+				<Fans1 />
 			</Main>
 
 			{/* <Footer>Ear1 footer</Footer> */}

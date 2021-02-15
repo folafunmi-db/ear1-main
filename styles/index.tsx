@@ -223,8 +223,8 @@ export const AboutContainer = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	width: 100vw;
 	overflow: hidden;
 	background-color: #f7f7f7;
@@ -233,7 +233,7 @@ export const AboutContainer = styled.div`
 
 export const AboutHeader = styled.h1`
 	width: 90%;
-	max-width: 30rem;
+	max-width: 40rem;
 	font-weight: 500;
 	color: ${ear1Green2};
 	font-size: clamp(15px, 8vw, 60px);
@@ -271,4 +271,69 @@ export const AboutIcon2 = styled(AboutIcon)`
 	@media (max-width: 801px) {
 		display: none;
 	}
+`;
+
+export const Fans1Container = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	width: 100vw;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 2rem 4rem;
+`;
+
+export const Fans1Left = styled(AboutContainer)`
+	min-width: 500px;
+	background-color: #fff;
+	justify-content: center;
+	align-items: flex-start;
+
+	max-width: 700px;
+`;
+
+export const FansPill = styled.div`
+	background-color: #ffbb62;
+	width: 4rem;
+	height: 1.7rem;
+	border-radius: 50px;
+	display: grid;
+	place-items: center;
+`;
+
+export const Fans1Header = styled(AboutHeader)`
+	color: #000;
+`;
+
+export const Fans1Paragraph = styled(AboutParagraph)`
+	color: #121212;
+`;
+
+export const Fans1Right = styled.div`
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	max-width: 450px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		width: 90%;
+		height: 90%;
+		background-color: #e4e4e4;
+	}
+`;
+
+export const Fans1Image = styled.div`
+	z-index: 3;
+	position: relative;
+
+
 `;
