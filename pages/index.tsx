@@ -25,7 +25,7 @@ export default function Home() {
 				<Hero />
       </Main>
       
-			<Footer>Ear1 footer</Footer>
+			{/* <Footer>Ear1 footer</Footer> */}
 		</App>
 	);
 }

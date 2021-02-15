@@ -31,8 +31,10 @@ export const HeroContainer = styled.header`
 	align-items: center;
 	background-color: ${ear1Green};
 	width: 100vw;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	height: 1200px;
 	position: relative;
+	overflow: hidden;
 
 	&::before {
 		/* background-image: url(http://api.thumbr.it/whitenoise-144x140.png?background=#029F58ff&noise=626262&density=47&opacity=15); */
@@ -156,7 +158,69 @@ export const Sub = styled.p`
 	max-width: 40rem;
 	font-weight: 400;
 	color: #fff;
-	font-size:  clamp(7px,4vw,20px);
+	font-size: clamp(7px, 4vw, 20px);
 	text-align: center;
-	line-height: clamp(7px,7vw,35px);
+	line-height: clamp(7px, 7vw, 35px);
+`;
+
+export const Phones = styled.div`
+	width: 100%;
+	max-width: 65rem;
+	height: 35rem;
+	overflow: hidden;
+`;
+
+export const Phone1 = styled.div`
+	z-index: 3;
+	position: absolute;
+	margin: 0 auto;
+	transform: translate(-50%, -50%);
+	top: 75%;
+	left: 44%;
+	margin-top: 15rem;
+	height: 900px;
+	width: 600px;
+
+	@media (max-width: 801px) {
+		transform: scale(0.8) translate(-72.9%, -40%);
+		top: 85vmax;
+		left: 50%;
+		margin-top: 15rem;
+	}
+
+	@media (max-width:580px) {
+		/* transform: scale(0.7) translate(-87%, -40%); */
+		margin-top: 50vw;
+	}
+
+	@media (max-width: 451px) {
+		transform: scale(0.65) translate(-87%, -40%);
+		margin-top: -30vw;
+	}
+`;
+
+export const Phone2 = styled.div`
+	z-index: 2;
+	position: absolute;
+	margin: 0;
+	transform: rotate(30deg) scale(0.65);
+	top: 47%;
+	margin-right: -22rem;
+
+	@media (max-width: 801px) {
+		display: none;
+	}
+`;
+
+export const Phone3 = styled.div`
+	z-index: 1;
+	position: absolute;
+	margin: 0;
+	transform: rotate(-30deg) scale(0.65);
+	top: 50%;
+	margin-left: -30rem;
+
+	@media (max-width: 801px) {
+		display: none;
+	}
 `;
