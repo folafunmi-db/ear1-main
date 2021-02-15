@@ -290,7 +290,7 @@ export const Fans1Left = styled(AboutContainer)`
 	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
-	max-width: 700px;
+	max-width: 480px;
 `;
 
 export const FansPill = styled.div`
