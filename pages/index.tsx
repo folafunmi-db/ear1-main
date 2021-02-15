@@ -13,7 +13,7 @@ export default function Home() {
 				/>
 				<meta name="subject" content="Ear1 Landing Page" />
 				<title>Ear1</title>
-				<link rel="icon" href="/favicon.svg" />
+				<link rel="icon" href="/assets/ear1-icon.svg" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link
 					href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"

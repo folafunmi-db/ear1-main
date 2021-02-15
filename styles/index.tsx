@@ -163,13 +163,6 @@ export const Sub = styled.p`
 	line-height: clamp(7px, 7vw, 35px);
 `;
 
-export const Phones = styled.div`
-	width: 100%;
-	max-width: 65rem;
-	height: 35rem;
-	overflow: hidden;
-`;
-
 export const Phone1 = styled.div`
 	z-index: 3;
 	position: absolute;
@@ -203,9 +196,9 @@ export const Phone2 = styled.div`
 	z-index: 2;
 	position: absolute;
 	margin: 0;
-	transform: rotate(30deg) scale(0.65);
-	top: 47%;
-	margin-right: -22rem;
+	transform: rotate(25deg) scale(0.65);
+	top: 57%;
+	margin-right: -12rem;
 
 	@media (max-width: 801px) {
 		display: none;
@@ -216,11 +209,20 @@ export const Phone3 = styled.div`
 	z-index: 1;
 	position: absolute;
 	margin: 0;
-	transform: rotate(-30deg) scale(0.65);
-	top: 50%;
-	margin-left: -30rem;
+	transform: rotate(-25deg) scale(0.65);
+	top: 60%;
+	margin-left: -23rem;
 
 	@media (max-width: 801px) {
 		display: none;
 	}
 `;
+
+export const AboutHeader = styled.h1`
+
+`
+
+export const AboutParagraph = styled(Sub)`
+	color: #000;
+text-align: left;
+`
