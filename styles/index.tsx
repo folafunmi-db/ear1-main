@@ -290,7 +290,7 @@ export const Fans1Left = styled(AboutContainer)`
 	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
-	max-width: 480px;
+	max-width: 580px;
 `;
 
 export const FansPill = styled.div`
@@ -308,6 +308,7 @@ export const Fans1Header = styled(AboutHeader)`
 
 export const Fans1Paragraph = styled(AboutParagraph)`
 	color: #121212;
+	width: 97%;
 `;
 
 export const Fans1Right = styled.div`

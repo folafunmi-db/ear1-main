@@ -1,4 +1,11 @@
-import { HeroContainer, Heading, Sub, Phone1, Phone2, Phone3 } from "../../styles/";
+import {
+	HeroContainer,
+	Heading,
+	Sub,
+	Phone1,
+	Phone2,
+	Phone3,
+} from "../../styles/";
 import Image from "next/image";
 import Nav from "./Nav";
 
@@ -12,30 +19,33 @@ const Hero = (): JSX.Element => {
 				for a small fee. What’s more? We assure you of getting a reply.
 			</Sub>
 
-				<Phone1>
-					<Image
-						src="/assets/ear1-phone3.svg"
-						alt="Phone-1-Ear1"
-						width={737}
-						height={1200.18}
-					/>
-				</Phone1>
-				<Phone3>
-					<Image
-						src="/assets/ear1-phone4.svg"
-						alt="Phone-2-Ear1"
-						width={737}
-						height={1200.18}
-					/>
-				</Phone3>
-				<Phone2>
-					<Image
-						src="/assets/ear1-phone5.svg"
-						alt="Phone-3-Ear1"
-						width={737}
-						height={1200.18}
-					/>
-				</Phone2>
+			<Phone1>
+				<Image
+					src="/assets/ear1-phone3.svg"
+					alt="Phone-1-Ear1"
+					width={737}
+					height={1200.18}
+					priority={true}
+				/>
+			</Phone1>
+			<Phone3>
+				<Image
+					src="/assets/ear1-phone4.svg"
+					alt="Phone-2-Ear1"
+					width={737}
+					height={1200.18}
+					priority={true}
+				/>
+			</Phone3>
+			<Phone2>
+				<Image
+					src="/assets/ear1-phone5.svg"
+					alt="Phone-3-Ear1"
+					width={737}
+					height={1200.18}
+					priority={true}
+				/>
+			</Phone2>
 		</HeroContainer>
 	);
 };

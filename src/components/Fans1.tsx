@@ -31,8 +31,8 @@ const Fans1 = () => {
 					<Image
 						src="/assets/ear1-fan1.svg"
 						alt="Ear1-fan-1"
-						width={414}
-						height={471}
+						width={310}
+						height={353}
 					/>
 				</Fans1Image>
 			</Fans1Right>
